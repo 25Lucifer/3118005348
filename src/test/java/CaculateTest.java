@@ -23,8 +23,8 @@ public class CaculateTest {
      */
     @Test
     public void orig(){
-        String source = FileUtil.fileToString("/Users/maple/Desktop/test/orig.txt");
-        String fake = FileUtil.fileToString("/Users/maple/Desktop/test/orig.txt");
+        String source = FileUtil.fileToString("src/main/resources/testFile/orig.txt");
+        String fake = FileUtil.fileToString("src/main/resources/testFile/orig.txt");
         double res = Calculate.caculate(source,fake);
         assert res == 1;
     }
@@ -34,8 +34,8 @@ public class CaculateTest {
      */
     @Test
     public void orig_add(){
-        String source = FileUtil.fileToString("/Users/maple/Desktop/test/orig.txt");
-        String fake = FileUtil.fileToString("/Users/maple/Desktop/test/orig_0.8_add.txt");
+        String source = FileUtil.fileToString("src/main/resources/testFile/orig.txt");
+        String fake = FileUtil.fileToString("src/main/resources/testFile/orig_0.8_add.txt");
         double res = Calculate.caculate(source,fake);
         assert res <= 1;
     }
@@ -45,8 +45,8 @@ public class CaculateTest {
      */
     @Test
     public void orig_del(){
-        String source = FileUtil.fileToString("/Users/maple/Desktop/test/orig.txt");
-        String fake = FileUtil.fileToString("/Users/maple/Desktop/test/orig_0.8_del.txt");
+        String source = FileUtil.fileToString("src/main/resources/testFile/orig.txt");
+        String fake = FileUtil.fileToString("src/main/resources/testFile/orig_0.8_del.txt");
         double res = Calculate.caculate(source,fake);
         assert res <= 1;
     }
@@ -56,8 +56,8 @@ public class CaculateTest {
      */
     @Test
     public void orig_dis(){
-        String source = FileUtil.fileToString("/Users/maple/Desktop/test/orig.txt");
-        String fake = FileUtil.fileToString("/Users/maple/Desktop/test/orig_0.8_dis_1.txt");
+        String source = FileUtil.fileToString("src/main/resources/testFile/orig.txt");
+        String fake = FileUtil.fileToString("src/main/resources/testFile/orig_0.8_dis_1.txt");
         double res = Calculate.caculate(source,fake);
         assert res <= 1;
     }
@@ -67,8 +67,8 @@ public class CaculateTest {
      */
     @Test
     public void orig_dis2(){
-        String source = FileUtil.fileToString("/Users/maple/Desktop/test/orig.txt");
-        String fake = FileUtil.fileToString("/Users/maple/Desktop/test/orig_0.8_dis_10.txt");
+        String source = FileUtil.fileToString("src/main/resources/testFile/orig.txt");
+        String fake = FileUtil.fileToString("src/main/resources/testFile/orig_0.8_dis_10.txt");
         double res = Calculate.caculate(source,fake);
         assert res <= 1;
     }
@@ -78,8 +78,8 @@ public class CaculateTest {
      */
     @Test
     public void orig_dis3(){
-        String source = FileUtil.fileToString("/Users/maple/Desktop/test/orig.txt");
-        String fake = FileUtil.fileToString("/Users/maple/Desktop/test/orig_0.8_dis_15.txt");
+        String source = FileUtil.fileToString("src/main/resources/testFile/orig.txt");
+        String fake = FileUtil.fileToString("src/main/resources/testFile/orig_0.8_dis_15.txt");
         double res = Calculate.caculate(source,fake);
         assert res <= 1;
     }
