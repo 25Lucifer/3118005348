@@ -14,12 +14,6 @@ import java.util.stream.Collectors;
  */
 public class Calculate {
 
-
-    public static void main(String[] args) {
-        double tem = caculate("我吃了苹果","苹果吃了我");
-        System.out.println(tem);
-    }
-
     /**
      * 计算两个句子的相似度
      * @param source 原文件
